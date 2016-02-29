@@ -11,7 +11,7 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
 		$scope.mProfesores = "";
 		$scope.mClasificacion    = "";
 		$scope.mClasificacionA    = "";
-		// $scope.mClasificacionB    = "";
+		$scope.mClasificacionB    = "";
 		// $scope.mClasificacionC    = "";
 		// $scope.mClasificacionD    = "";
 

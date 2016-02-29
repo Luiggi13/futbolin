@@ -18,8 +18,12 @@ app.config( function($routeProvider){
 			controller: 'clasificacionCtrl'
 		})
 		.when('/clasificacion/grupoA',{
-			templateUrl: 'parciales/grupoA.html',
+			templateUrl: 'parciales/grupos.html',
 			controller: 'clasificacionACtrl'
+		})
+		.when('/clasificacion/grupoB',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionBCtrl'
 		})
 		.when('/alumno/:idEquipo',{
 			templateUrl: 'parciales/alumno.html',

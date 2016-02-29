@@ -18,6 +18,7 @@
         <script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
         <script src="js/lib/ui-utils.min.js"></script>
+        <script src="js/lib/jquery.min.js"></script>
 
 
         <script src="js/app.js"></script>
@@ -29,7 +30,6 @@
         <script src="js/clasificacionCtrl.js"></script>
         <script src="js/equipoCtrl.js"></script>
 
-
         
     </head>    
     <body>
@@ -37,7 +37,7 @@
         <div ng-include="menuSuperior"></div>
 
         
-        <div class="container">
+        <div class="mainApp container" ng-class="mContainer">
         <!-- La pagina principal ira aquí -->
             
             <div ng-view></div>

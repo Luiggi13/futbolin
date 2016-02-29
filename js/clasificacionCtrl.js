@@ -1,4 +1,5 @@
 app.controller('clasificacionCtrl', ['$scope','$http', function($scope,$http){
+	$('.mainApp').removeClass('fluid-container').addClass('container');
 	
 	$scope.setActive("mClasificacion");
 

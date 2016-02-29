@@ -1,4 +1,6 @@
 app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope,$routeParams,$http){
+	$('.mainApp').removeClass('fluid-container').addClass('container');
+	
 	$scope.setActive("mClasificacion");
 	var idEquipo = $routeParams.idEquipo;
 	$scope.actualizado = false;

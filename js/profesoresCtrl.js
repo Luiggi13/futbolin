@@ -1,4 +1,5 @@
 app.controller('profesoresCtrl', ['$scope', function($scope){
+	$('.mainApp').removeClass('fluid-container').addClass('container');
 	
 	$scope.setActive("mProfesores");
 

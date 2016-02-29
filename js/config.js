@@ -17,6 +17,10 @@ app.config( function($routeProvider){
 			templateUrl: 'parciales/clasificacion.html',
 			controller: 'clasificacionCtrl'
 		})
+		.when('/clasificacion/grupoA',{
+			templateUrl: 'parciales/grupoA.html',
+			controller: 'clasificacionACtrl'
+		})
 		.when('/alumno/:idEquipo',{
 			templateUrl: 'parciales/alumno.html',
 			controller: 'alumnoCtrl'

@@ -1,0 +1,53 @@
+<h1>Clasificación <span class="small">Grupo {{alumno.grupoLiga}}</span></h1>
+<hr>
+
+<div class="row">
+            <!-- {{ alumnos | json }} -->
+<div class="col-md-6 searcher">
+<select ng-model="busqueda.grupoLiga" class="form-control">
+	<option value="">TODOS LOS GRUPOS</option>
+	<option value="A">Grupo A</option>
+	<option value="B">Grupo B</option>
+	<option value="C">Grupo C</option>
+	<option value="D">Grupo D</option>
+</select>
+	
+</div>
+
+<table class="table table-striped">
+		<tr>
+			<!-- <th>idEquipo</th> -->
+			<th>nombreEquipo</th>
+			<th>puntosEquipo</th>
+			<th>Partidos jugados</th>
+			<th>Partidos ganados</th>
+			<th>Partidos perdidos</th>
+			<th>Goles a favor</th>
+			<th>Goles en contra</th>
+			<th>Grupo Liga</th>
+			<th>Ver</th>
+		</tr>
+		<tr ng-repeat="alumno in alumnos |filter:busqueda ">
+		<!-- <tr ng-repeat="alumno in alumnos | limitTo:posicion | limitTo:-5"> -->
+			<!-- <td>{{alumno.idEquipo}}</td> -->
+			<td>{{alumno.nombreEquipo}}</td>
+			<td>{{alumno.puntosEquipo}}</td>
+			<td>{{alumno.partidosJugados}}</td>
+			<td>{{alumno.partidosGanados}}</td>
+			<td>{{alumno.partidosPerdidos}}</td>
+			<td>{{alumno.golesFavor}}</td>
+			<td>{{alumno.golesContra}}</td>
+			<td>{{alumno.grupoLiga}}</td>
+			<td><a href="#/alumno/{{ alumno.idEquipo }}">Ver registro</a></td>
+		</tr>
+</table>
+
+<br>
+
+<!-- <button type="button" class="btn btn-primary" ng-click="dosendos()">2 en 2</button> 
+<button type="button" class="btn btn-primary" ng-click="anteriores()">Anterior</button>
+<button type="button" class="btn btn-primary" ng-click="siguientes()">Siguiente</button>-->
+
+
+
+</div>

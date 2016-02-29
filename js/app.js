@@ -12,8 +12,8 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
 		$scope.mClasificacion    = "";
 		$scope.mClasificacionA    = "";
 		$scope.mClasificacionB    = "";
-		// $scope.mClasificacionC    = "";
-		// $scope.mClasificacionD    = "";
+		$scope.mClasificacionC    = "";
+		$scope.mClasificacionD    = "";
 
 		$scope[Opcion] = "active";
 

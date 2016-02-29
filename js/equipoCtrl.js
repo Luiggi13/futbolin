@@ -1,23 +1,23 @@
-app.controller('alumnoCtrl', ['$scope', '$routeParams', '$http', function($scope,$routeParams,$http){
+app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope,$routeParams,$http){
 	$scope.setActive("mClasificacion");
 	var idEquipo = $routeParams.idEquipo;
 	$scope.actualizado = false;
 	$scope.alumno = {};
 
-	$http.get('php/servicios/alumnos.getAlumno.php?c='+ idEquipo)
+	$http.get('php/servicios/equipos.getEquipo.php?c='+ idEquipo)
 	.success(function(data){
 
 		if (data.err !== undefined) {
-			window.location  = "#/alumnos";
+			window.location  = "#/equipos";
 			return;
 		}
 		$scope.alumno = data;
 
 	});
 
-	$scope.guardarAlumno = function(){
+	$scope.guardarEquipo = function(){
 
-		$http.post('php/servicios/alumnos.guardar.php', $scope.alumno)
+		$http.post('php/servicios/equipos.guardar.php', $scope.alumno)
 			.success(function(data){
 				if (data.err === false) {
 					$scope.actualizado=true;

@@ -25,8 +25,16 @@ app.config( function($routeProvider){
 			templateUrl: 'parciales/grupos.html',
 			controller: 'clasificacionBCtrl'
 		})
-		.when('/alumno/:idEquipo',{
-			templateUrl: 'parciales/alumno.html',
+		.when('/clasificacion/grupoC',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionCCtrl'
+		})
+		.when('/clasificacion/grupoD',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionDCtrl'
+		})
+		.when('/equipo/:idEquipo',{
+			templateUrl: 'parciales/equipo.html',
 			controller: 'alumnoCtrl'
 		})
 		.otherwise({

@@ -35,7 +35,7 @@ app.config( function($routeProvider){
 		})
 		.when('/equipo/:idEquipo',{
 			templateUrl: 'parciales/equipo.html',
-			controller: 'alumnoCtrl'
+			controller: 'equipoCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'

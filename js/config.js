@@ -9,7 +9,7 @@ app.config( function($routeProvider){
 			templateUrl: 'parciales/home.html',
 			controller: 'inicioCtrl'
 		})
-		.when('/profesores',{
+		.when('/partidos',{
 			templateUrl: 'parciales/profesores.html',
 			controller: 'profesoresCtrl'
 		})
@@ -17,9 +17,25 @@ app.config( function($routeProvider){
 			templateUrl: 'parciales/clasificacion.html',
 			controller: 'clasificacionCtrl'
 		})
-		.when('/alumno/:idEquipo',{
-			templateUrl: 'parciales/alumno.html',
-			controller: 'alumnoCtrl'
+		.when('/clasificacion/grupoA',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionACtrl'
+		})
+		.when('/clasificacion/grupoB',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionBCtrl'
+		})
+		.when('/clasificacion/grupoC',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionCCtrl'
+		})
+		.when('/clasificacion/grupoD',{
+			templateUrl: 'parciales/grupos.html',
+			controller: 'clasificacionDCtrl'
+		})
+		.when('/equipo/:idEquipo',{
+			templateUrl: 'parciales/equipo.html',
+			controller: 'equipoCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'

@@ -1,49 +1,38 @@
 <!DOCTYPE html>
-<html ng-app="universidadApp" ng-controller="mainCtrl">
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Futbolín MediaMarkt</title>
 
 
         <!-- Incluir Bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.css">
-
-        <!-- Estilo personalizado -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <!-- Incluir AngularJS -->
-        <script src="js/lib/angular.min.js"></script>
-        <script src="js/lib/angular-route.min.js"></script>
-        <script src="js/lib/ui-utils.min.js"></script>
-
-
-        <script src="js/app.js"></script>
-        <script src="js/config.js"></script>
-
-        <!-- Controladores de páginas -->
-        <script src="js/inicioCtrl.js"></script>
-        <script src="js/profesoresCtrl.js"></script>
-        <script src="js/clasificacionCtrl.js"></script>
-        <script src="js/alumnoCtrl.js"></script>
-
+        <link rel="stylesheet" href="css/intro.css">
 
         
     </head>    
     <body>
         
-        <div ng-include="menuSuperior"></div>
+       <div class="container">
+    <div class="header">
+        <div class="clr"></div>
+    </div>
+    <div class="sp-container">
+        <div class="sp-content">
+            <div class="sp-globe"></div>
+                <h2 class="frame-1">Los jugones entran en el campo</h2>
 
-        
-        <div class="container">
-        <!-- La pagina principal ira aquí -->
-            
-            <div ng-view></div>
+                <h2 class="frame-2">Vaselinas, slow motions</h2>
 
-        </div><!-- /.container -->
+                <h2 class="frame-3">Levantarás la copa o saldrás en la intranet?</h2>
 
+                <h2 class="frame-4">Apúntate YA!</h2>
+
+                <h2 class="frame-5"><span>Pásala</span> <span>Dispara</span> <span>GOLLLL!</span></h2>
+    <a class="sp-circle-link" href="home.html#/clasificacion">GO!</a>
+
+        </div>
+    </div>
+</div>
 
     </body>
 </html>

@@ -11,11 +11,18 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
 		$scope.mProfesores = "";
 		$scope.mClasificacion    = "";
 		$scope.mClasificacionA    = "";
-		// $scope.mClasificacionB    = "";
-		// $scope.mClasificacionC    = "";
-		// $scope.mClasificacionD    = "";
+		$scope.mClasificacionB    = "";
+		$scope.mClasificacionC    = "";
+		$scope.mClasificacionD    = "";
 
 		$scope[Opcion] = "active";
+
+	}
+	$scope.setFluid = function(Opcion){
+
+		$scope.mContainer    = "";
+
+		$scope[Opcion] = "fluid-container";
 
 	}
 

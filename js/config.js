@@ -9,7 +9,7 @@ app.config( function($routeProvider){
 			templateUrl: 'parciales/home.html',
 			controller: 'inicioCtrl'
 		})
-		.when('/profesores',{
+		.when('/partidos',{
 			templateUrl: 'parciales/profesores.html',
 			controller: 'profesoresCtrl'
 		})

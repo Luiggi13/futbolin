@@ -25,7 +25,7 @@
 			<th>Goles a favor</th>
 			<th>Goles en contra</th>
 			<th>Grupo Liga</th>
-			<th>Ver</th>
+			<th>Edit</th>
 		</tr>
 		<tr ng-repeat="alumno in alumnos |filter:busqueda ">
 		<!-- <tr ng-repeat="alumno in alumnos | limitTo:posicion | limitTo:-5"> -->
@@ -38,7 +38,7 @@
 			<td>{{alumno.golesFavor}}</td>
 			<td>{{alumno.golesContra}}</td>
 			<td>{{alumno.grupoLiga}}</td>
-			<td><a href="#/equipo/{{ alumno.idEquipo }}">Ver registro</a></td>
+			<td><a href="#/equipo/{{ alumno.idEquipo }}">Editar</a></td>
 		</tr>
 </table>
 

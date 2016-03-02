@@ -5,6 +5,7 @@ include_once("../classes/class.Database.php");
 // Retorna un json
 header('Content-Type: application/json');
 
+
 //$sql = 'SELECT * FROM alumnos WHERE grupoLiga = "B"';
 $sql = "SELECT * FROM alumnos WHERE grupoLiga = 'A' ORDER BY puntosEquipo DESC, golesFavor DESC, golesContra DESC";
 

@@ -7,8 +7,8 @@ app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope
 	$scope.actualizado = false;
 	$scope.alumno = {};
 	$scope.items={};
-	// $scope.posicionSeleccionada="2";
-	// $scope.posicionSeleccionada2="1";
+	$scope.posicionSeleccionada="2";
+	$scope.posicionSeleccionada2="1";
 
 	$http.get('php/servicios/equipos.getEquipo.php?c='+ idEquipo)
 	.success(function(data){

@@ -48,3 +48,4 @@ app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope
 	}
 
 }]);
+

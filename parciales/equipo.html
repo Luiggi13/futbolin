@@ -3,10 +3,10 @@
 <h1>Update equipo <span class="small">{{ alumno.nombreEquipo }}</span></h1>
 
 <hr>
-            {{ alumno | json }}
+<!--             {{ alumno | json }}
 
 
-<hr>
+<hr> -->
 <div class="row">
    <form ng-submit="guardarEquipo()">
       <div class="col-md-4">
@@ -46,53 +46,61 @@
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.grupoLiga" required>
       </div>
       <div class="row"><hr></div>
-         <div class="row">
+         <div class="row player jug1">
 <!--             <div class="col-md-6">
                Posicion Jugador 2:{{posicionSeleccionada}} 
                <select ng-model="posicionSeleccionada" class="form-control" ng-options="item as item.posicion for item in items">
                   <option value="">asdasd</option>
                </select>
             </div> -->
+<h3>Información jugadores <span class="small">Capitán del equipo <font color="red" size="2"> {{ alumno.nombre1 }}</font></span></h3>
 
-      <div class="col-md-4">
+<hr>
+      <div class="col-md-6">
          Grupo nombre1:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.nombre1" required>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
          Grupo apellido1:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.apellido1" required>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
          Grupo mail1:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.mail1" required>
       </div>
+      <div class="col-md-6">
+         Posición jugador 1:
       <select ng-model="alumno.posJugador1" class="form-control">
          <option ng-repeat="nombreposicion in items" value="{{nombreposicion.idPosicion}}">{{nombreposicion.posicion}}</option>
       </select>
+      </div>
 
-      <div class="col-md-4">
+
+               
+            </div>
+            <div class="row player jug2">
+               
+      <div class="col-md-6">
          Grupo nombre2:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.nombre2" required>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
          Grupo apellido2:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.apellido2" required>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
          Grupo mail2:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.mail2" required>
       </div>
 
             <div class="col-md-6">
-               Posicion Jugador 2:{{posicionSeleccionada2}} 
+               Posicion Jugador 2:
               <select ng-model="alumno.posJugador2" class="form-control">
                   <option ng-repeat="nombreposicion2 in items" value="{{nombreposicion2.idPosicion}}">{{nombreposicion2.posicion}}</option>
                </select>
-               Posicion Jugador 1:{{posicionSeleccionada}} 
                
 
             </div>
-               
             </div>
          </div>
 

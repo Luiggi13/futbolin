@@ -2,6 +2,7 @@
 <hr>
 
 <div class="row">
+            <!-- {{ alumnos | json }} -->
 <div class="col-md-6 searcher">
 <select ng-model="busqueda.grupoLiga" class="form-control">
 	<option value="">TODOS LOS GRUPOS</option>
@@ -26,7 +27,7 @@
 			<th>Grupo Liga</th>
 			<th>Ver</th>
 		</tr>
-		<tr ng-repeat="alumno in alumnos |filter:busqueda ">
+		<tr ng-repeat="alumno in alumnos |filter:busqueda.grupoLiga ">
 		<!-- <tr ng-repeat="alumno in alumnos | limitTo:posicion | limitTo:-5"> -->
 			<!-- <td>{{alumno.idEquipo}}</td> -->
 			<td>{{alumno.nombreEquipo}}</td>
@@ -37,7 +38,7 @@
 			<td>{{alumno.golesFavor}}</td>
 			<td>{{alumno.golesContra}}</td>
 			<td>{{alumno.grupoLiga}}</td>
-			<td><a href="#/equipo/{{ alumno.idEquipo }}">Ver registro</a></td>
+			<td><a href="#/alumno/{{ alumno.idEquipo }}">Ver registro</a></td>
 		</tr>
 </table>
 

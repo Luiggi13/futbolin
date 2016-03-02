@@ -3,7 +3,7 @@
 <h1>Update equipo <span class="small">{{ alumno.nombreEquipo }}</span></h1>
 
 <hr>
-            {{ items | json }}
+            {{ alumno | json }}
 
 
 <hr>
@@ -45,7 +45,7 @@
          Grupo Liga:
          <input type="text" class="form-control" tabindex="7" ng-model="alumno.grupoLiga" required>
       </div>
-
+      <div class="row"><hr></div>
          <div class="row">
 <!--             <div class="col-md-6">
                Posicion Jugador 2:{{posicionSeleccionada}} 
@@ -53,16 +53,44 @@
                   <option value="">asdasd</option>
                </select>
             </div> -->
+
+      <div class="col-md-4">
+         Grupo nombre1:
+         <input type="text" class="form-control" tabindex="7" ng-model="alumno.nombre1" required>
+      </div>
+      <div class="col-md-4">
+         Grupo apellido1:
+         <input type="text" class="form-control" tabindex="7" ng-model="alumno.apellido1" required>
+      </div>
+      <div class="col-md-4">
+         Grupo mail1:
+         <input type="text" class="form-control" tabindex="7" ng-model="alumno.mail1" required>
+      </div>
+      <select ng-model="alumno.posJugador1" class="form-control">
+         <option ng-repeat="nombreposicion in items" value="{{nombreposicion.idPosicion}}">{{nombreposicion.posicion}}</option>
+      </select>
+
+      <div class="col-md-4">
+         Grupo nombre2:
+         <input type="text" class="form-control" tabindex="7" ng-model="alumno.nombre2" required>
+      </div>
+      <div class="col-md-4">
+         Grupo apellido2:
+         <input type="text" class="form-control" tabindex="7" ng-model="alumno.apellido2" required>
+      </div>
+      <div class="col-md-4">
+         Grupo mail2:
+         <input type="text" class="form-control" tabindex="7" ng-model="alumno.mail2" required>
+      </div>
+
             <div class="col-md-6">
                Posicion Jugador 2:{{posicionSeleccionada2}} 
-              <select ng-model="posicionSeleccionada2" class="form-control" ng-options="mypos.posicion for mypos in items track by mypos.idPosicion">
+              <select ng-model="alumno.posJugador2" class="form-control">
                   <option ng-repeat="nombreposicion2 in items" value="{{nombreposicion2.idPosicion}}">{{nombreposicion2.posicion}}</option>
                </select>
                Posicion Jugador 1:{{posicionSeleccionada}} 
                
-               <select ng-model="posicionSeleccionada" class="form-control" ng-options="mypos.posicion for mypos in items track by mypos.idPosicion">
-                  <option ng-repeat="nombreposicion in items" value="{{nombreposicion.idPosicion}}">{{nombreposicion.posicion}}</option>
-               </select>
+
             </div>
                
             </div>

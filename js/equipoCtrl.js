@@ -1,4 +1,3 @@
-
 app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope,$routeParams,$http){
 	$('.mainApp').removeClass('fluid-container').addClass('container');
 	
@@ -6,9 +5,12 @@ app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope
 	var idEquipo = $routeParams.idEquipo;
 	$scope.actualizado = false;
 	$scope.alumno = {};
+<<<<<<< HEAD
 	$scope.items={};
 	$scope.posicionSeleccionada="2";
 	$scope.posicionSeleccionada2="1";
+=======
+>>>>>>> parent of 05f2a83... estable1
 
 	$http.get('php/servicios/equipos.getEquipo.php?c='+ idEquipo)
 	.success(function(data){
@@ -20,15 +22,6 @@ app.controller('equipoCtrl', ['$scope', '$routeParams', '$http', function($scope
 		$scope.alumno = data;
 
 	});
-
-
-	$http.get('php/servicios/alumnos.posiciones.php')
-	.success(function(data){
-
-		$scope.items=data;
-	});
-
-
 
 	$scope.guardarEquipo = function(){
 

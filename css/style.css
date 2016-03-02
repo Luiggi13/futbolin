@@ -16,9 +16,12 @@ body *{
 }
 
 
+<<<<<<< HEAD
 .row .row{margin: 0;}
 .row.player{margin: 15px;padding: 15px;}
 .row.player h3{margin: 0;text-align: center;}
 .row.player h3 span.small{color:white;}
 .row.jug1{background-color: rgb(126, 204, 227);border-radius: 0 10px 0 10px;}
 .row.jug2{background-color: rgb(187, 220, 239);border-radius: 10px 0 10px 0;}
+=======
+>>>>>>> parent of 05f2a83... estable1

@@ -1,0 +1,2 @@
+registry=https://pkgs.dev.azure.com/christianllansola0824/_packaging/Artf1/npm/registry/
+always-auth=true
